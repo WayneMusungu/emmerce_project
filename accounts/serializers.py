@@ -40,7 +40,9 @@ class SignUpSerializer(serializers.ModelSerializer):
 
 
 class CurrentUserTaskSerializer(serializers.ModelSerializer):
-    todos = serializers.StringRelatedField(many=True)
+    todos = serializers.HyperlinkedRelatedField(
+        many=True, view_name="task_detail", queryset=User.objects.all()
+)
 
     class Meta:
         model = User
