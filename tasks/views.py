@@ -14,6 +14,7 @@ from .models import Todo
 from .serializers import TodoSerializer
 from .permissions import ReadOnly, AuthorOrReadOnly
 from rest_framework.pagination import PageNumberPagination
+from drf_yasg.utils import swagger_auto_schema
 
 
 class CustomPaginator(PageNumberPagination):
@@ -55,9 +56,17 @@ class TaskListCreateView(
         serializer.save(author=user)
         return super().perform_create(serializer)
 
+    @swagger_auto_schema(
+        operation_summary="Shows all tasks",
+        operation_description="This endpoint return all tasks posted by registered users."
+    )
     def get(self, request: Request, *args, **kwargs):
         return self.list(request, *args, **kwargs)
 
+    @swagger_auto_schema(
+        operation_summary="Create a task",
+        operation_description="This endpoint creates a task."
+    )
     def post(self, request: Request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
 
@@ -72,12 +81,24 @@ class TaskRetrieveUpdateDeleteView(
     queryset = Todo.objects.all()
     permission_classes = [AuthorOrReadOnly]
 
+    @swagger_auto_schema(
+        operation_summary="Get a task by its specific id",
+        operation_description="This endpoint retrieves a task by an id."
+    )
     def get(self, request: Request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
+    @swagger_auto_schema(
+        operation_summary="Update a task by its specific id",
+        operation_description="This endpoint updates a task by its id."
+    )
     def put(self, request: Request, *args, **kwargs):
         return self.update(request, *args, **kwargs)
-
+    
+    @swagger_auto_schema(
+        operation_summary="Delete a task",
+        operation_description="This endpoint deletes a task."
+    )
     def delete(self, request: Request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
 
@@ -107,5 +128,9 @@ class ListTasksForAuthor(generics.GenericAPIView, mixins.ListModelMixin):
 
         return queryset
 
+    @swagger_auto_schema(
+        operation_summary="List tasks for a specific user",
+        operation_description="This endpoint return all tasks by a specific user."
+    )
     def get(self, request, *args, **kwargs):
         return self.list(request, *args, **kwargs)
