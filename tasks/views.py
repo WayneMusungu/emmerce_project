@@ -17,7 +17,7 @@ from rest_framework.pagination import PageNumberPagination
 
 
 class CustomPaginator(PageNumberPagination):
-    page_size = 3
+    page_size = 5
     page_query_param = "page"
     page_size_query_param = "page_size"
 
@@ -29,11 +29,11 @@ def homepage(request: Request):
     if request.method == "POST":
         data = request.data
 
-        response = {"message": "Hello World", "data": data}
+        response = {"message": "Welcome to Todo List App", "data": data}
 
         return Response(data=response, status=status.HTTP_201_CREATED)
 
-    response = {"message": "Hello World"}
+    response = {"message": "Welcome to Todo List App"}
     return Response(data=response, status=status.HTTP_200_OK)
 
 
