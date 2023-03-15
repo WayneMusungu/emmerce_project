@@ -235,7 +235,7 @@ This will show an error because the task by that id does not exist
 ### Create a Task
 This endpoint is responsible for creating a task
 
-Remember the access token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the acccess token `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
+Remember the access token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the value of the acccess token that was generated for you. Here is an example: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
 
 #### Request
 
@@ -263,7 +263,7 @@ In the body pass in the json format of the tasks like shown below:
 ### Get a Current User's Task
 This endpoint is responsible for getting all the tasks of the logged in user
 
-Remember the access token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the acccess token `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
+Remember the access token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the value of the acccess token that was generated for you. Here is an example: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
 
 #### Request
 
@@ -288,7 +288,7 @@ Send a blank request to the above endpoint and a response will show the user's t
 ### Update a specific task
 This endpoint is responsible for updating a specific task by its id
 
-Remember to do the same procedure of passing in your bearer token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the acccess token `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
+Remember to do the same procedure of passing in your bearer token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the value of the acccess token that was generated for you. Here is an example: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
 
 #### Request
 
@@ -314,7 +314,7 @@ On the body section pass in the JSON format of title and description as shown be
 ### Delete a specific task
 This endpoint is responsible for deleting a specific task by its id
 
-Remember to do the same procedure of passing in your bearer token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the acccess token `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
+Remember to do the same procedure of passing in your bearer token? Click on `Authorization` on token type select `Bearer Token` on the token then pass in the value of the acccess token that was generated for you. Here is an example:  `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODcwMjMxLCJpYXQiOjE2Nzg4NjMwMzEsImp0aSI6IjYyNWVlY2E3ZGVmOTQ5NTBhZjEzOTA3NDg3MzQ4MzY0IiwidXNlcl9pZCI6Mn0.7hAADOuA3490OrifJg3pp5hSBPeYED3siO-T4Z-tjCI`
 
 #### Request
 
