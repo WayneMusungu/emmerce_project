@@ -94,9 +94,9 @@ The REST API to Todo API is described below.
 Add your sign up request as shown in the sample below:
 
     {
-        "email": "joedon@gmail.com",
-        "username": "joedon",
-        "password": "joedon@2023"
+        "email": "warren@gmail.com",
+        "username": "warren",
+        "password": "warren@2023"
     }
 
 #### Response
@@ -104,8 +104,8 @@ Add your sign up request as shown in the sample below:
     {
         "message": "User Created Successfully",
         "data": {
-            "email": "joedon@gmail.com",
-            "username": "joedon"
+            "email": "warren@gmail.com",
+            "username": "warren"
         }
     }
 
@@ -120,8 +120,8 @@ Add your sign up request as shown in the sample below:
 Add your log in request after successful registration as show in the sample below:
 
     `{
-        "email": "joedon@gmail.com",
-        "password": "joedon@2023"
+        "email": "warren@gmail.com",
+        "password": "warren@2023"
      }`
 
 The above request will log in a user and generate a pair authentication as shown below
