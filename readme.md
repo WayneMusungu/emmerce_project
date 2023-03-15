@@ -1,10 +1,6 @@
 # Todo API.
 
-This is simple REST API that allows users to create, retrieve, update, and delete items from a todo list. The APIis using JWT Authentication and is be able to:
-1.Retrieve a list of all todo items.
-2.Retrieve a specific todo item by ID.
-3.Update a specific todo item by ID.
-4.Delete a specific todo item by ID.
+This is simple REST API that users JWT authentication that allows users to create, retrieve, update, and delete items from a todo list.
 
 
 ### Cloning the repository
