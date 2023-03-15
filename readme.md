@@ -71,9 +71,9 @@ python manage.py runserver
 
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
-### Screenshot
+<!-- ### Screenshot
 On the homepage of the Task API go Create a user account the 
-![Website](img.png)
+![Website](img.png) -->
 
 
 
@@ -89,7 +89,8 @@ The REST API to Todo API is described below.
 
 `POST /auth/signup`
 
-    'Accept: application/json' http://127.0.0.1:8000//auth/signup/
+    `Accept: application/json`
+    'http://127.0.0.1:8000//auth/signup/
 
 Add your sign up request as shown in the sample below:
 
@@ -115,7 +116,8 @@ Add your sign up request as shown in the sample below:
 
 `POST /auth/login`
 
-    'Accept: application/json'  ' http://127.0.0.1:8000//auth/login/
+    `Accept: application/json`
+    ' http://127.0.0.1:8000//auth/login/
 
 Add your log in request after successful registration as show in the sample below:
 
@@ -143,7 +145,8 @@ Upon successful log in one need to create token pair. This takes a set of user c
 
 `POST /auth/jwt/create/`
 
-    'Accept: application/json'  ' http://127.0.0.1:8000/auth/jwt/create/
+    `Accept: application/json`
+    ' http://127.0.0.1:8000/auth/jwt/create/
 
 Pass in your logged in credentials to generate a refresh and an access token
 
@@ -171,7 +174,8 @@ Here no authentication is required to view all tasks posted by different users.
 
 `POST /auth/jwt/create/`
 
-    'Accept: application/json'  '  http://127.0.0.1:8000/tasks/
+    `Accept: application/json`
+    '  http://127.0.0.1:8000/tasks/
 
 Send a request to the above endpoint and it will show all tasks posted by registered users
 
