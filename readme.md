@@ -147,8 +147,8 @@ Upon successful log in one need to create token pair. This takes a set of user c
 Pass in your logged in credentials to generate a refresh and an access token
 
     `{
-        "email": "joedon@gmail.com",
-        "password": "joedon@2023"
+        "email": "warren@gmail.com",
+        "password": "warren@2023"
      }`
 
 #### Response
