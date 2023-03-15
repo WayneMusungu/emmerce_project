@@ -37,6 +37,15 @@ class SignUpSerializer(serializers.ModelSerializer):
         Token.objects.create(user=user)
 
         return user
+    
+class LogInSerializer(serializers.ModelSerializer):
+    email = serializers.CharField(max_length=80)
+    # username = serializers.CharField(max_length=45)
+    password = serializers.CharField(min_length=8, write_only=True)
+
+    class Meta:
+        model = User
+        fields = ["email", "password"]
 
 
 class CurrentUserTaskSerializer(serializers.ModelSerializer):
