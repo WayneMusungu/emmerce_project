@@ -8,7 +8,7 @@ This is simple REST API that users JWT authentication that allows users to creat
 Clone the repository using the command below :
 
 ```bash
-git clone https://github.com/WayneMusungu/PetWebsite.git
+git clone https://github.com/WayneMusungu/emmerce_project.git
 
 ```
 
