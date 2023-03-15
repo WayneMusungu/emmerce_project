@@ -88,7 +88,7 @@ The REST API to Todo API is described below.
 #### Request
 
 `POST /auth/signup` `Accept: application/json`
-    'http://127.0.0.1:8000//auth/signup/
+    'http://127.0.0.1:8000/auth/signup/
 
 Add your sign up request as shown in the sample below:
 
@@ -114,7 +114,7 @@ Add your sign up request as shown in the sample below:
 
 `POST /auth/login` `Accept: application/json`
 
-    ' http://127.0.0.1:8000//auth/login/
+    http://127.0.0.1:8000/auth/login/
 
 Add your log in request after successful registration as show in the sample below:
 
