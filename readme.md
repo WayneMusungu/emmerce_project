@@ -79,7 +79,17 @@ On the homepage of the Task API go Create a user account the
 
 # REST API
 
-The REST API to Todo API is described below.
+Here we will be using postman to test our api endpoints follow the procedure below:
+
+1. After cloning and running the server, OPen postman and click on workspaces and then myworkspaces
+2. Click on the Import button 
+3. A pop-up dialogue box will appear select on `Choose File`
+4. Locate the directory to which you cloned the repository, select and open `Todo Api.postman_collection.json`
+5. Finally Click on `import`.
+6. There you go! Now you can be able to work on the api as shown in the procedures below
+
+
+The REST API for Todo API is described below.
 
 ## AUTHENTICATION
 
