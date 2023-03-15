@@ -329,6 +329,7 @@ Here are some of the error responses that will show:
 
 #### Sign Up with preexisting email
 Signing up with an already registered email:
+   
     {
         "errors": [
             "Email has already been used"
@@ -337,12 +338,14 @@ Signing up with an already registered email:
 
 #### Log In with invalid credentials
 Log in with invalid credentials:
+   
     {
         "message": "Invalid email or password"
     }
 
 #### No Token Response
 In case where no token was passed the following response will be displayed:
+    
     {
     "detail": "Authentication credentials were not provided."
     }
