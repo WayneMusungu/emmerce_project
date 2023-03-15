@@ -112,9 +112,8 @@ Add your sign up request as shown in the sample below:
 
 #### Request
 
-`POST /auth/login`
+`POST /auth/login` `Accept: application/json`
 
-    `Accept: application/json`
     ' http://127.0.0.1:8000//auth/login/
 
 Add your log in request after successful registration as show in the sample below:
@@ -142,8 +141,7 @@ Upon successful log in one need to create token pair. This takes a set of user c
 #### Request
 
 `POST /auth/jwt/create/`
-
-    `Accept: application/json`
+`Accept: application/json`
     ' http://127.0.0.1:8000/auth/jwt/create/
 
 Pass in your logged in credentials to generate a refresh and an access token
