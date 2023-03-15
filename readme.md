@@ -1,10 +1,10 @@
 # Todo API.
 
 This is simple REST API that allows users to create, retrieve, update, and delete items from a todo list. The APIis using JWT Authentication and is be able to:
-● Retrieve a list of all todo items.
-● Retrieve a specific todo item by ID.
-● Update a specific todo item by ID.
-● Delete a specific todo item by ID.
+1.Retrieve a list of all todo items.
+2.Retrieve a specific todo item by ID.
+3.Update a specific todo item by ID.
+4.Delete a specific todo item by ID.
 
 
 ### Cloning the repository
@@ -59,8 +59,6 @@ python manage.py createsuperuser
 
 ```
 
-#
-
 ### Running the App
 
 --> To run the App, we use :
@@ -71,18 +69,13 @@ python manage.py runserver
 
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
-<!-- ### Screenshot
-On the homepage of the Task API go Create a user account the 
-![Website](img.png) -->
-
-
 
 # REST API
 
-Here we will be using postman to test our api endpoints follow the procedure below:
+Here we will be using postman to test our api endpoints, make sure to download and install postman to follow the procedure below:
 
-1. After cloning and running the server, OPen postman and click on workspaces and then myworkspaces
-2. Click on the Import button 
+1. After cloning and running the server, Open postman and click on `workspaces` and then `myworkspaces`
+2. Click on the `Import` button 
 3. A pop-up dialogue box will appear select on `Choose File`
 4. Locate the directory to which you cloned the repository, select and open `Todo Api.postman_collection.json`
 5. Finally Click on `import`.
